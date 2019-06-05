@@ -42,9 +42,9 @@ namespace RealEstateManager.WebApi.Controllers
 
         public IHttpActionResult Delete(int id)
         {
-            var service = CreateRealEstatePropertyService();
+            var servic = CreateRealEstatePropertyService();
 
-            if (!service.RealEstatePropertyDelete(id))
+            if (!servic.RealEstatePropertyDelete(id))
                 return InternalServerError();
 
             return Ok();
