@@ -10,7 +10,7 @@ namespace RealEstate.Models.RealEstateProperty
     public class RealEstatePropertyListItem
     {
         public int RealEstatePropertyId { get; set; }
-        public string RealEstateProperyName { get; set; }
+        public string RealEstatePropertyName { get; set; }
         public string ImageLink { get; set; }
         public int SquareFootage { get; set; }
         public string RealEstateAddress { get; set; }

@@ -63,12 +63,17 @@
     <Compile Include="RealEstateProperty\RealEstatePropertyDetail.cs" />
     <Compile Include="RealEstateProperty\RealEstatePropertyListItem.cs" />
     <Compile Include="RealEstateProperty\RealEstatePropertyUpdate.cs" />
+    <Compile Include="RealEstateRent\RentCreate.cs" />
+    <Compile Include="RealEstateRent\RentDetail.cs" />
+    <Compile Include="RealEstateRent\RentEdit.cs" />
+    <Compile Include="RealEstateRent\RentListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="RealEstateBuy\" />
     <Folder Include="RealEstateRent\" />
   </ItemGroup>
   <ItemGroup>
