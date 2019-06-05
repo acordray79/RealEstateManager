@@ -28,6 +28,9 @@ namespace RealEstate.Data
         [DefaultValue(false)]
         public bool BuyFavorite { get; set; }
 
+        [Required]
+        public int RealEstatePropertyId { get; set; }
+
         public virtual RealEstateProperty Property { get; set; }
 
     }
