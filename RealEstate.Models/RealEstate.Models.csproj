@@ -70,6 +70,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="RealEstateBuy\" />
+    <Folder Include="RealEstateRent\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RealEstate.Data\RealEstate.Data.csproj">
+      <Project>{63D79F14-AE9E-491E-A8D9-A5F4C16DE6C5}</Project>
+      <Name>RealEstate.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
