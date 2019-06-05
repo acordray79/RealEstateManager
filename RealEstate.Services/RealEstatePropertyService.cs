@@ -23,7 +23,7 @@ namespace RealEstate.Services
             var entity =
                 new RealEstateProperty()
                 {
-                    RealEstateProperyName = model.RealEstateProperyName,
+                    RealEstatePropertyName = model.RealEstatePropertyName,
                     ImageLink = model.ImageLink,
                     SquareFootage = model.SquareFootage,
                     RealEstateAddress = model.RealEstateAddress,
@@ -57,7 +57,7 @@ namespace RealEstate.Services
                                 new RealEstatePropertyListItem
                                 {
                                     RealEstatePropertyId = e.RealEstatePropertyId,
-                                    RealEstateProperyName = e.RealEstateProperyName,
+                                    RealEstatePropertyName = e.RealEstatePropertyName,
                                     ImageLink = e.ImageLink,
                                     SquareFootage = e.SquareFootage,
                                     RealEstateAddress = e.RealEstateAddress,
@@ -88,7 +88,7 @@ namespace RealEstate.Services
                     new RealEstatePropertyDetail
                     {
                         RealEstatePropertyId = entity.RealEstatePropertyId,
-                        RealEstateProperyName = entity.RealEstateProperyName,
+                        RealEstatePropertyName = entity.RealEstatePropertyName,
                         ImageLink = entity.ImageLink,
                         SquareFootage = entity.SquareFootage,
                         RealEstateAddress = entity.RealEstateAddress,
@@ -113,7 +113,7 @@ namespace RealEstate.Services
                     ctx
                         .RealEstateProperty
                         .Single(e => e.RealEstatePropertyId == model.RealEstatePropertyId);
-                entity.RealEstateProperyName = model.RealEstateProperyName;
+                entity.RealEstatePropertyName = model.RealEstatePropertyName;
                 entity.ImageLink = model.ImageLink;
                 entity.SquareFootage = model.SquareFootage;
                 entity.RealEstateAddress = model.RealEstateAddress;
