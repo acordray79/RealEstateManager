@@ -55,6 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealEstateBuy\BuyCreate.cs" />
+    <Compile Include="RealEstateBuy\BuyDetail.cs" />
+    <Compile Include="RealEstateBuy\BuyEdit.cs" />
+    <Compile Include="RealEstateBuy\BuyListItem.cs" />
     <Compile Include="RealEstateProperty\RealEstatePropertyCreate.cs" />
     <Compile Include="RealEstateProperty\RealEstatePropertyDetail.cs" />
     <Compile Include="RealEstateProperty\RealEstatePropertyListItem.cs" />

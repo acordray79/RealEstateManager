@@ -11,12 +11,13 @@ namespace RealEstate.Services
 {
     public class BuyService
     {
-        //private readonly Guid _userId;
+        private readonly Guid _userId;
 
-        //public BuyService(Guid userId)
-        //{
-        //    _userId = userId;
-        //}
+        public BuyService(Guid userId)
+        {
+            _userId = userId;
+        }
+
 
         public bool CreateBuyProperty(BuyCreate model)
         {
