@@ -1,16 +1,15 @@
-﻿using System;
+﻿using RealEstate.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RealEstate.Data
+namespace RealEstate.Models.RealEstateProperty
 {
-    public enum PropertyType { Residential = 1, Commercial, Industrial, Land }
-    public class RealEstateProperty
+    public class RealEstatePropertyUpdate
     {
         public int RealEstatePropertyId { get; set; }
-        public Guid OwnerID { get; set; }
         public string RealEstateProperyName { get; set; }
         public string ImageLink { get; set; }
         public int SquareFootage { get; set; }

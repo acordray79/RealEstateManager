@@ -33,7 +33,7 @@ namespace RealEstateManager.Data
             return new ApplicationDbContext();
         }
 
-        public DbSet<RealEstateProperty> RealEstate { get; set; }
+        public DbSet<RealEstateProperty> RealEstateProperty { get; set; }
         public DbSet<RealEstateRent> RealEstateRent { get; set; }
         public DbSet<RealEstateBuy> RealEstateBuy { get; set; }
 
