@@ -15,8 +15,8 @@ namespace RealEstate.Models.RealEstateRent
         public bool UtilitiesIncluded { get; set; }
         public bool PetsAllowed { get; set; }
 
-        public bool IsRestFavorite { get; set; }
+        public bool IsRentFavorite { get; set; }
 
-        public int RealEstatePropertyID { get; set; }
+        public int RealEstatePropertyId { get; set; }
     }
 }
