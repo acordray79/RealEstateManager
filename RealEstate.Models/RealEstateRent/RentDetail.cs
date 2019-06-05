@@ -17,7 +17,7 @@ namespace RealEstate.Models.RealEstateRent
 
         public bool IsRentFavorite { get; set; }
 
-        public int RealEstatePropertyID { get; set; }
+        public int RealEstatePropertyId { get; set; }
 
     }
 }
