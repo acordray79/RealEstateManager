@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.Identity;
+using RealEstate.Models.RealEstateBuys;
 using RealEstate.Services;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,6 @@ namespace RealEstateManager.WebApi.Controllers
         {
             public IHttpActionResult GetAllRealEstateProperty()
             {
-                //RealEstatePropertyService realEstatePropertyService = CreateRealEstatePropertyService();
-                //var realEstateProperty = realEstatePropertyService.GetRealEstateProperty();
-                //return Ok(realEstateProperty);
-
             BuyService buyService = CreateBuyPropertyService();
             var buyProperty = buyService.GetBuyListItems();
             return Ok(buyProperty);
@@ -26,19 +23,19 @@ namespace RealEstateManager.WebApi.Controllers
 
             public IHttpActionResult Get(int id)
             {
-                RealEstatePropertyService realEstatePropertyService = CreateRealEstatePropertyService();
-                var realEstateProperty = realEstatePropertyService.GetRealEstatePropertyById(id);
-                return Ok(realEstateProperty);
-            }
+                BuyService buyService = CreateBuyPropertyService();
+                var buyProperty = buyService.GetBuyPropertyById(id);
+                return Ok(buyProperty);
+        }
 
-            public IHttpActionResult Post(RealEstatePropertyCreate realEstateProperty)
+            public IHttpActionResult Post(BuyCreate createBuyProperty)
             {
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
-                var service = CreateRealEstatePropertyService();
+                var service = CreateBuyPropertyService();
 
-                if (!service.CreateRealEstateProperty(realEstateProperty))
+                if (!service.CreateBuyProperty(createBuyProperty))
                     return InternalServerError();
 
                 return Ok();
@@ -46,20 +43,13 @@ namespace RealEstateManager.WebApi.Controllers
 
             public IHttpActionResult Delete(int id)
             {
-                var service = CreateRealEstatePropertyService();
+                var service = CreateBuyPropertyService();
 
-                if (!service.RealEstatePropertyDelete(id))
+                if (!service.DeleteBuyProperty(id))
                     return InternalServerError();
 
                 return Ok();
             }
-
-            //private RealEstatePropertyService CreateRealEstatePropertyService()
-            //{
-            //    var userId = Guid.Parse(User.Identity.GetUserId());
-            //    var realEstatePropertyService = new RealEstatePropertyService(userId);
-            //    return realEstatePropertyService;
-            //}
 
             private BuyService CreateBuyPropertyService()
             {
