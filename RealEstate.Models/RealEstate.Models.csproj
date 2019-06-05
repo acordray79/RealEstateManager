@@ -55,6 +55,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealEstateProperty\RealEstatePropertyCreate.cs" />
+    <Compile Include="RealEstateProperty\RealEstatePropertyDetail.cs" />
+    <Compile Include="RealEstateProperty\RealEstatePropertyListItem.cs" />
+    <Compile Include="RealEstateProperty\RealEstatePropertyUpdate.cs" />
+    <Compile Include="RealEstateRent\RentCreate.cs" />
+    <Compile Include="RealEstateRent\RentDetail.cs" />
+    <Compile Include="RealEstateRent\RentEdit.cs" />
+    <Compile Include="RealEstateRent\RentListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -62,8 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="RealEstateBuy\" />
-    <Folder Include="RealEstateProperty\" />
-    <Folder Include="RealEstateRent\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

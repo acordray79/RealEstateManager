@@ -13,6 +13,7 @@ namespace RealEstate.Data
         public int RentId { get; set; }
 
         public Guid OwnerId { get; set; }
+        public DateTime Available { get; set; }
 
         public double PricePerMonth { get; set; }
 
@@ -21,7 +22,7 @@ namespace RealEstate.Data
         public bool UtilitiesIncluded { get; set; }
         public bool PetsAllowed { get; set; }
 
-        public bool IsFavorite { get; set; }
+        public bool IsRentFavorite { get; set; }
 
         public int RealEstatePropertyID { get; set; }
         public virtual RealEstateProperty RealEstateProperty { get; set; }
