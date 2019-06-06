@@ -1,5 +1,4 @@
 ﻿using RealEstate.Data;
-using RealEstate.Models.RealEstateBuy;
 using RealEstate.Models.RealEstateBuys;
 using RealEstateManager.Data;
 using System;
@@ -49,9 +48,6 @@ namespace RealEstate.Services
                         {
                             BuyId = e.BuyId,
                             RealEstatePropertyId = e.RealEstatePropertyId,
-                            Bedroom = e.Property.Bedroom,
-                            Bathroom = e.Property.Bathroom,
-                            SquareFootage = e.Property.SquareFootage,
                             DateAvail = e.DateAvail,
                             Price = e.Price
                         });
