@@ -1,5 +1,4 @@
 ﻿using RealEstate.Data;
-using RealEstate.Models.RealEstateBuy;
 using RealEstate.Models.RealEstateBuys;
 using RealEstateManager.Data;
 using System;
