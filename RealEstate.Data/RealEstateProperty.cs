@@ -11,7 +11,7 @@ namespace RealEstate.Data
     {
         public int RealEstatePropertyId { get; set; }
         public Guid OwnerID { get; set; }
-        public string RealEstateProperyName { get; set; }
+        public string RealEstatePropertyName { get; set; }
         public string ImageLink { get; set; }
         public int SquareFootage { get; set; }
         public string RealEstateAddress { get; set; }
