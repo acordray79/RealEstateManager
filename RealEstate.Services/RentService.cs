@@ -49,6 +49,7 @@ namespace RealEstate.Services
                         e =>
                         new RentListItem
                         {
+                            RentId = e.RentId,
                             Available = e.Available,
                             PricePerMonth = e.PricePerMonth,
                             Description = e.Description,
@@ -73,6 +74,7 @@ namespace RealEstate.Services
                 return
                     new RentDetail
                     {
+                        RentId = entity.RentId,
                         Available = entity.Available,
                         PricePerMonth = entity.PricePerMonth,
                         Description = entity.Description,

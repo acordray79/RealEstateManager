@@ -1,5 +1,6 @@
 ﻿using RealEstate.Data;
 using RealEstate.Models.RealEstateBuy;
+using RealEstate.Models.RealEstateBuys;
 using RealEstateManager.Data;
 using System;
 using System.Collections.Generic;
@@ -11,12 +12,13 @@ namespace RealEstate.Services
 {
     public class BuyService
     {
-        //private readonly Guid _userId;
+        private readonly Guid _userId;
 
-        //public BuyService(Guid userId)
-        //{
-        //    _userId = userId;
-        //}
+        public BuyService(Guid userId)
+        {
+            _userId = userId;
+        }
+
 
         public bool CreateBuyProperty(BuyCreate model)
         {
