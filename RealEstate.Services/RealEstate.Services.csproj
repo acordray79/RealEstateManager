@@ -57,6 +57,7 @@
     <Compile Include="BuyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RealEstatePropertyService.cs" />
+    <Compile Include="RentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

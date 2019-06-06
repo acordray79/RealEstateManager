@@ -39,7 +39,18 @@ namespace RealEstateManager.WebApi.Controllers
 
             return Ok();
         }
+        public IHttpActionResult Put(RentEdit editRent)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
+            var service = CreateRentService();
+
+            if (!service.UpdateRent(editRent))
+                return InternalServerError();
+
+            return Ok();
+        }
         public IHttpActionResult Delete(int Id)
         {
             var service = CreateRentService();
