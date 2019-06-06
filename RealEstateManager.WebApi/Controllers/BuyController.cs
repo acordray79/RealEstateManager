@@ -41,6 +41,18 @@ namespace RealEstateManager.WebApi.Controllers
                 return Ok();
             }
 
+        public IHttpActionResult Put(BuyEdit editBuyProperty)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var service = CreateBuyPropertyService();
+
+            if (!service.EditBuyProperty(editBuyProperty))
+                return InternalServerError();
+            return Ok();
+        }
+
             public IHttpActionResult Delete(int id)
             {
                 var service = CreateBuyPropertyService();

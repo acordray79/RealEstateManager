@@ -55,10 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RealEstateBuy\BuyCreate.cs" />
-    <Compile Include="RealEstateBuy\BuyDetail.cs" />
-    <Compile Include="RealEstateBuy\BuyEdit.cs" />
-    <Compile Include="RealEstateBuy\BuyListItem.cs" />
+    <Compile Include="RealEstateBuys\BuyCreate.cs" />
+    <Compile Include="RealEstateBuys\BuyDetail.cs" />
+    <Compile Include="RealEstateBuys\BuyEdit.cs" />
+    <Compile Include="RealEstateBuys\BuyListItem.cs" />
     <Compile Include="RealEstateProperty\RealEstatePropertyCreate.cs" />
     <Compile Include="RealEstateProperty\RealEstatePropertyDetail.cs" />
     <Compile Include="RealEstateProperty\RealEstatePropertyListItem.cs" />
@@ -72,10 +72,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="RealEstateBuy\" />
-    <Folder Include="RealEstateRent\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\RealEstate.Data\RealEstate.Data.csproj">
       <Project>{63D79F14-AE9E-491E-A8D9-A5F4C16DE6C5}</Project>

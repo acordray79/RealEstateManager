@@ -18,7 +18,6 @@ namespace RealEstate.Services
             _userId = userId;
         }
 
-
         public bool CreateBuyProperty(BuyCreate model)
         {
             using (var db = new ApplicationDbContext())
@@ -48,9 +47,6 @@ namespace RealEstate.Services
                         {
                             BuyId = e.BuyId,
                             RealEstatePropertyId = e.RealEstatePropertyId,
-                            Bedroom = e.Property.Bedroom,
-                            Bathroom = e.Property.Bathroom,
-                            SquareFootage = e.Property.SquareFootage,
                             DateAvail = e.DateAvail,
                             Price = e.Price
                         });
