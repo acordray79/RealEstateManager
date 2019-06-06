@@ -11,7 +11,7 @@ using System.Web.Http;
 namespace RealEstateManager.WebApi.Controllers
 {
     
-        [Authorize]
+        //[Authorize]
         public class BuyController : ApiController
         {
             public IHttpActionResult GetAllRealEstateProperty()
@@ -40,6 +40,18 @@ namespace RealEstateManager.WebApi.Controllers
 
                 return Ok();
             }
+
+        public IHttpActionResult Put(BuyEdit editBuyProperty)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var service = CreateBuyPropertyService();
+
+            if (!service.EditBuyProperty(editBuyProperty))
+                return InternalServerError();
+            return Ok();
+        }
 
             public IHttpActionResult Delete(int id)
             {
