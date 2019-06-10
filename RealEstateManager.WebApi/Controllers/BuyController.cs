@@ -11,7 +11,7 @@ using System.Web.Http;
 namespace RealEstateManager.WebApi.Controllers
 {
     
-        //[Authorize]
+        [Authorize]
         public class BuyController : ApiController
         {
             public IHttpActionResult GetAllRealEstateProperty()
