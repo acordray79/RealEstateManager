@@ -45,9 +45,9 @@ namespace RealEstateManager.WebApi.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var servic = CreateRealEstatePropertyService();
+            var service = CreateRealEstatePropertyService();
 
-            if (!servic.RealEstatePropertyUpdate(realEstateProperty))
+            if (!service.RealEstatePropertyUpdate(realEstateProperty))
                 return InternalServerError();
 
             return Ok();
