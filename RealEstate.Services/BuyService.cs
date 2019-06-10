@@ -18,7 +18,6 @@ namespace RealEstate.Services
             _userId = userId;
         }
 
-
         public bool CreateBuyProperty(BuyCreate model)
         {
             using (var db = new ApplicationDbContext())

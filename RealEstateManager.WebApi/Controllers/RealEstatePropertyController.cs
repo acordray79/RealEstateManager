@@ -40,6 +40,19 @@ namespace RealEstateManager.WebApi.Controllers
             return Ok();
         }
 
+        public IHttpActionResult Put(RealEstatePropertyUpdate realEstateProperty)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var servic = CreateRealEstatePropertyService();
+
+            if (!servic.RealEstatePropertyUpdate(realEstateProperty))
+                return InternalServerError();
+
+            return Ok();
+        }
+
         public IHttpActionResult Delete(int id)
         {
             var service = CreateRealEstatePropertyService();
