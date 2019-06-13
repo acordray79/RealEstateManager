@@ -42,20 +42,27 @@ namespace RealEstate.Services
             {
                 var query = db.RealEstateBuy
                     .Select(
-                    e =>
+                    entity =>
                         new BuyListItem
                         {
-                            BuyId = e.BuyId,
-                            RealEstatePropertyId = e.RealEstatePropertyId,
-                            DateAvail = e.DateAvail,
-                            Price = e.Price,
-                            Description = e.Description,
-                            RealEstatePropertyName = e.Property.RealEstatePropertyName,
-                            PropertyType = e.Property.PropertyType,
-                            ImageLink = e.Property.ImageLink,
-                            RealEstateCity = e.Property.RealEstateCity,
-                            RealEstateState = e.Property.RealEstateState,
-                            Bedroom = e.Property.Bedroom
+                            BuyId = entity.BuyId,
+                            RealEstatePropertyId = entity.RealEstatePropertyId,
+                            DateAvail = entity.DateAvail,
+                            Price = entity.Price,
+                            Description = entity.Description,
+                            RealEstatePropertyName = entity.Property.RealEstatePropertyName,
+                            PropertyType = entity.Property.PropertyType,
+                            ImageLink = entity.Property.ImageLink,
+                            Stories = entity.Property.Stories,
+                            SquareFootage = entity.Property.SquareFootage,
+                            RealEstateAddress = entity.Property.RealEstateAddress,
+                            RealEstateCity = entity.Property.RealEstateCity,
+                            RealEstateState = entity.Property.RealEstateState,
+                            RealEstateZip = entity.Property.RealEstateZip,
+                            Bedroom = entity.Property.Bedroom,
+                            HasBasement = entity.Property.HasBasement,
+                            HasPool = entity.Property.HasPool,
+                            Bathroom = entity.Property.Bathroom
                         });
                 return query.ToArray();
             }
@@ -78,6 +85,7 @@ namespace RealEstate.Services
                     RealEstatePropertyName = entity.Property.RealEstatePropertyName,
                     PropertyType = entity.Property.PropertyType,
                     ImageLink = entity.Property.ImageLink,
+                    Stories = entity.Property.Stories,
                     SquareFootage = entity.Property.SquareFootage,
                     RealEstateAddress = entity.Property.RealEstateAddress,
                     RealEstateCity = entity.Property.RealEstateCity,
