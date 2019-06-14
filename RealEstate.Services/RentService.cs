@@ -56,7 +56,20 @@ namespace RealEstate.Services
                             UtilitiesIncluded = e.UtilitiesIncluded,
                             PetsAllowed = e.PetsAllowed,
                             IsRentFavorite = e.IsRentFavorite,
-                            RealEstatePropertyId = e.RealEstatePropertyId
+                            RealEstatePropertyId = e.RealEstatePropertyId,
+                            RealEstatePropertyName = e.RealEstateProperty.RealEstatePropertyName,
+                            PropertyType = e.RealEstateProperty.PropertyType,
+                            ImageLink = e.RealEstateProperty.ImageLink,
+                            Stories = e.RealEstateProperty.Stories,
+                            SquareFootage = e.RealEstateProperty.SquareFootage,
+                            RealEstateAddress = e.RealEstateProperty.RealEstateAddress,
+                            RealEstateCity = e.RealEstateProperty.RealEstateCity,
+                            RealEstateState = e.RealEstateProperty.RealEstateState,
+                            RealEstateZip = e.RealEstateProperty.RealEstateZip,
+                            Bedroom = e.RealEstateProperty.Bedroom,
+                            HasBasement = e.RealEstateProperty.HasBasement,
+                            HasPool = e.RealEstateProperty.HasPool,
+                            Bathroom = e.RealEstateProperty.Bathroom
                         }).ToArray();
 
                 return query.ToArray();
@@ -81,7 +94,20 @@ namespace RealEstate.Services
                         UtilitiesIncluded = entity.UtilitiesIncluded,
                         PetsAllowed = entity.PetsAllowed,
                         IsRentFavorite = entity.IsRentFavorite,
-                        RealEstatePropertyId = entity.RealEstatePropertyId
+                        RealEstatePropertyId = entity.RealEstatePropertyId,
+                        RealEstatePropertyName = entity.RealEstateProperty.RealEstatePropertyName,
+                        PropertyType = entity.RealEstateProperty.PropertyType,
+                        ImageLink = entity.RealEstateProperty.ImageLink,
+                        Stories = entity.RealEstateProperty.Stories,
+                        SquareFootage = entity.RealEstateProperty.SquareFootage,
+                        RealEstateAddress = entity.RealEstateProperty.RealEstateAddress,
+                        RealEstateCity = entity.RealEstateProperty.RealEstateCity,
+                        RealEstateState = entity.RealEstateProperty.RealEstateState,
+                        RealEstateZip = entity.RealEstateProperty.RealEstateZip,
+                        Bedroom = entity.RealEstateProperty.Bedroom,
+                        HasBasement = entity.RealEstateProperty.HasBasement,
+                        HasPool = entity.RealEstateProperty.HasPool,
+                        Bathroom = entity.RealEstateProperty.Bathroom
                     };
             }
         }
