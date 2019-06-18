@@ -15,8 +15,8 @@ namespace RealEstate.Data.Migrations
                         OwnerId = c.Guid(nullable: false),
                         DateAvail = c.DateTime(nullable: false),
                         Price = c.Double(nullable: false),
-                        Description = c.String(nullable: false),
-                        BuyFavorite = c.Boolean(nullable: false),
+                        Description = c.String(),
+                        BuyFavorite = c.Boolean(),
                         RealEstatePropertyId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.BuyId)

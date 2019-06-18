@@ -7,13 +7,13 @@ namespace RealEstate.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class _fixed : IMigrationMetadata
+    public sealed partial class updatetopush : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(_fixed));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(updatetopush));
         
         string IMigrationMetadata.Id
         {
-            get { return "201906052028159_fixed"; }
+            get { return "201906181405598_update to push"; }
         }
         
         string IMigrationMetadata.Source
