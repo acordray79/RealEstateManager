@@ -9,7 +9,7 @@ namespace RealEstate.Models.RealEstateRent
     public class RentEdit
     {
         public int RentId { get; set; }
-        public DateTime Available { get; set; }
+        public DateTime DateAvailable { get; set; }
         public double PricePerMonth { get; set; }
         public string Description { get; set; }
         public bool UtilitiesIncluded { get; set; }

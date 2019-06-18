@@ -113,19 +113,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\201906051951144_InitialCreate.cs" />
-    <Compile Include="Migrations\201906051951144_InitialCreate.Designer.cs">
-      <DependentUpon>201906051951144_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906052028159_fixed.cs" />
-    <Compile Include="Migrations\201906052028159_fixed.Designer.cs">
-      <DependentUpon>201906052028159_fixed.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906112045231_validation.cs" />
-    <Compile Include="Migrations\201906112045231_validation.Designer.cs">
-      <DependentUpon>201906112045231_validation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RealEstateBuy.cs" />
     <Compile Include="RealEstateProperty.cs" />
@@ -134,17 +121,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906051951144_InitialCreate.resx">
-      <DependentUpon>201906051951144_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906052028159_fixed.resx">
-      <DependentUpon>201906052028159_fixed.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906112045231_validation.resx">
-      <DependentUpon>201906112045231_validation.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
