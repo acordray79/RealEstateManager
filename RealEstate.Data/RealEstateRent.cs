@@ -13,7 +13,7 @@ namespace RealEstate.Data
         public int RentId { get; set; }
 
         public Guid OwnerId { get; set; }
-        public string Available { get; set; }
+        public DateTime Available { get; set; }
 
         public double PricePerMonth { get; set; }
 
