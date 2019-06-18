@@ -23,7 +23,7 @@ namespace RealEstate.Services
             var entity =
                 new RealEstateRent()
                 {
-                    Available = model.Available,
+                    DateAvailable = model.DateAvailable,
                     PricePerMonth = model.PricePerMonth,
                     Description = model.Description,
                     UtilitiesIncluded = model.UtilitiesIncluded,
@@ -50,7 +50,7 @@ namespace RealEstate.Services
                         new RentListItem
                         {
                             RentId = e.RentId,
-                            Available = e.Available,
+                            DateAvailable = e.DateAvailable,
                             PricePerMonth = e.PricePerMonth,
                             Description = e.Description,
                             UtilitiesIncluded = e.UtilitiesIncluded,
@@ -88,7 +88,7 @@ namespace RealEstate.Services
                     new RentDetail
                     {
                         RentId = entity.RentId,
-                        Available = entity.Available,
+                        DateAvailable = entity.DateAvailable,
                         PricePerMonth = entity.PricePerMonth,
                         Description = entity.Description,
                         UtilitiesIncluded = entity.UtilitiesIncluded,
@@ -119,7 +119,7 @@ namespace RealEstate.Services
                     ctx
                     .RealEstateRent
                     .Single(e => e.RentId == model.RentId);
-                entity.Available = model.Available;
+                entity.DateAvailable = model.DateAvailable;
                 entity.PricePerMonth = model.PricePerMonth;
                 entity.Description = model.Description;
                 entity.UtilitiesIncluded = model.UtilitiesIncluded;
