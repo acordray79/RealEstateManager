@@ -32,6 +32,7 @@ namespace RealEstateManager.WebApi.Models
         public bool HasRegistered { get; set; }
 
         public string LoginProvider { get; set; }
+        public string Role { get; internal set; }
     }
 
     public class UserLoginInfoViewModel
