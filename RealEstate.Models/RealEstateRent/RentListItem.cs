@@ -10,7 +10,7 @@ namespace RealEstate.Models.RealEstateRent
     public class RentListItem
     {
         public int RentId { get; set; }
-        public string Available { get; set; }
+        public DateTime Available { get; set; }
         public double PricePerMonth { get; set; }
         public string Description { get; set; }
         public bool UtilitiesIncluded { get; set; }
